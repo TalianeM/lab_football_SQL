@@ -1,0 +1,46 @@
+
+-- Finding all matches from 2017
+
+SELECT * 
+FROM matches 
+WHERE season = 2017; 
+
+-- Finding all matches featuring Barcelona
+
+SELECT *
+FROM matches
+WHERE hometeam = 'Barcelona';
+AND awayteam = 'Barcelona';
+
+-- What are the names of the scottish divisions included?
+
+SELECT *
+FROM divisions;
+WHERE country = 'Scotland';
+
+-- Finding out how many matches Freiburg have played in the Bundesliga
+
+SELECT *
+FROM  code; 
+WHERE code = D1;
+AND hometeam = 'Freiburg' OR awayteam = 'Freigburg'
+
+-- Find the teams which includes the word "City" in their name
+
+SELECT*
+FROM matches;
+WHERE hometeam LIKE '%city'
+
+
+-- SELECT* 
+-- FROM matche
+-- WHERE hometeam = 'city' AND awayteam = 'city'; 
+
+SELECT* 
+FROM divisions;
+WHERE country = 'France'
+SELECT COUNT(DISTINCT hometeam)
+
+SELECT*
+FROM matches;
+WHERE 
